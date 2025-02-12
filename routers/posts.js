@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
 });
 // show
 router.get('/:id', function (req, res) {
-    res.send('Dettagli della ricetta ' + req.params.id);
+    res.send('Dettagli di una ricetta ' + req.params.id);
 });
 // store
 router.post('/', function (req, res) {
