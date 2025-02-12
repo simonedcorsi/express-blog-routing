@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const ricetteRouter = require('./routers/posts.js');
+const postsRouter = require('./routers/posts.js');
 
 app.use(express.static('public'));
 
@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.send('Server del mio blog');
 });
 
-app.use("/api/posts", ricetteRouter)
+app.use("/api/posts", postsRouter)
 
 // app.get("/api/bacheca", (req, res) => {
 
